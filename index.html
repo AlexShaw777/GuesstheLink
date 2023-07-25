@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body onload ="timer_passage();"> 
+    <main>
+        <h1>Welcome to Link'd</h1>  
+        <h2>Your job is to find the link between these two players</h2>
+        <h2>Try to find the link with the least amount of guesses possible.</h2>
+        <button onclick="startGame()" id = "playButton">Play</button>
+        <button onclick="checkAddGuess(getData())" id = "guessButton">Guess</button>
+        <button onclick="getData()" id ="getData">Get Data</button>
+        <h1 id = "guessCounter">1</h1>
+
+
+
+        <div class="row">
+
+            <div class="column" id = "Splayer"><span>Precious Achiuwa</span></div>
+
+            <div class="column" id = "guesses">
+              <input placeholder="Enter your guess" type ="text" id = "guess1" class="guessList">
+            </div>
+
+            <div class="column" id="Eplayer"><span>Lebron James</span></div> 
+
+        </div>
+
+        <p id ="result"></p>
+
+
+        <!-- when you enter the correct teammate to either side then the input box turns green -->
+
+
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>

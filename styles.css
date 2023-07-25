@@ -1,0 +1,69 @@
+.column 
+{
+    float: left;
+    /* text-align: center; */
+    width: 33%;
+}
+
+.row::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main
+{
+    text-align: center;
+}
+
+
+input
+{
+    height: 13px;
+}
+
+.guessList
+{
+    width:33%;
+    text-align: center;
+    padding: 10px;
+}
+
+.input
+{
+    text-align: center;
+    
+}
+
+#guesses
+{
+    text-align: center;
+    
+}
+
+#guessCounter
+{
+    display: none;
+}
+
+#guessButton
+{
+    display: none;
+}
+
+
+input[type=text]
+{
+    border: 2px red solid;
+}
+
+#Splayer
+{
+    border: 2px green solid;
+}
+
+#Eplayer
+{
+    border: 2px green solid;
+}
